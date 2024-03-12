@@ -1,0 +1,133 @@
+<!-- TODO 1: Create the HTML Boilerplate -->
+
+<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+
+<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+
+<!-- TODO 4: Add titles/subtitles etc. -->
+
+<!-- TODO 5: Add a link to the project pages -->
+
+<!-- TODO 6: Add images to show the project previews
+HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+
+<!-- TODO 7: Add the Contact Me and About Me page links -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="My beginner portfolio website">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>My portfolio</title>
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+            }
+            .header{
+                max-height: fit-content;
+                background-color: #021f0d;
+            }
+            .header h1{
+                color: #58f594;
+            }
+            .header h2{
+                color:#1d5e36;
+            }
+            .laptop{
+                margin-left: 800px;
+                margin-top: 80px;
+                margin-bottom: -50px;
+            }
+            .main-heading{
+                margin-left: 200px;
+                margin-top: -120px;
+                padding-bottom: 80px;
+                font-size: 50px;
+            }
+            .header-content{
+                margin-left: 260px;
+                margin-top: -80px;
+                margin-bottom: 80px;
+                font-size: 25px;
+            }
+            .movie,.birthday{
+                height: 300px;
+                width: 500px;
+                margin-bottom: 30px;
+                border: 0px solid;
+                border-radius: 20px;
+                padding-top: 10px;
+            }
+            .movie-link,.birthday-link{
+                text-decoration-thickness: 200;
+                font-weight: 700;
+                margin-left: 200px;
+                color: #3ffc91;
+            }
+            .mid{
+                display:flex;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                margin-left: 90px;
+                background-color: #0b3f1f;
+                margin: 0;
+                padding: 0;
+                margin-top: -20px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            .image-1,.image-2{
+                margin-left: 140px;
+            }
+            .footer{
+                background-color: #032610;
+                margin: 0;
+                padding: 0;
+                margin-top: -20px;
+                padding-bottom: 20px;
+            }
+            .personal-link{
+                padding-top: 20px;
+                padding-bottom: 10px;
+                li a{
+                    text-decoration: none;
+                    color:#3ffc91;
+                }
+                li{
+                    color:#3ffc91;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <img class="laptop" src="./assets/images/laptop.png" alt=" a laptop logo" height="150" width="250"/>
+            <h1 class="main-heading">Arnab's portfolio</h1>
+            <h2 class="header-content">Howdy! Welcome to my humble<br> mini web projects. </h2>
+            <hr class="ruler"/>
+        </div>
+        <div class="mid">
+        <div class="image-1">
+                <a class="movie-link" href="./public/movie.html">Movie ranking</a>
+                <img class="movie" src="./assets/images/movies.png" alt="screenshot of my movie recommendations webpage "/>
+            </div>
+            <div class="image-2">
+                <a class="birthday-link" href="./public/birthday.html">Birthday invite</a>
+            <img class="birthday" src="./assets/images/birthday.png" alt="screenshot of my birthday invitation webpage"/>
+            </div>
+        <hr/>
+        </div>
+        <div class="footer">
+            <ul class="personal-link">
+                <li><a href="./public/about.html">About me</a></li>
+                <li><a href="./public/contact.html">Contact me</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
